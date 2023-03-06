@@ -5,6 +5,7 @@ export const Todos = () => {
   const [todos, setTodos] = useState([]);
   const [inputValue, setinputValue] = useState("");
   const [id, setId] = useState(0);
+
   function handleInputChange(e) {
     if (e.target.type === "text") setinputValue(e.target.value);
   }
@@ -31,7 +32,7 @@ export const Todos = () => {
   }
 
   return (
-    <div className="relative top-20 flex flex-col items-center gap-5 h-96 ">
+    <div className="relative top-20 flex flex-col items-center gap-5 h-96 bg-opacity-25">
       <h1 className=" text-4xl font-bold">Todo List</h1>
       <form onSubmit={handleSubmit}>
         <input

@@ -8,8 +8,8 @@ export const List = ({
   handleDelete,
 }) => {
   return (
-    <div>
-      <ul className="flex flex-col gap-5 max-w-lg">
+    <div className=" flex flex-col gap-5 ">
+      <ul className=" flex flex-col gap-5  break-normal	">
         {todos.map((todo, index) => (
           <Todoitem
             todo={todo}

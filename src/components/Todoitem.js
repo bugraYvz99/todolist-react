@@ -5,13 +5,13 @@ export const Todoitem = ({ todo = {}, index = 0, handleToggleCompletion }) => {
     <div>
       {
         <li
-          className="flex flex-row"
+          className="flex flex-row  "
           key={todo.id}
           onClick={() => handleToggleCompletion(index)}
         >
           <input type="checkbox" checked={todo.checked} />
           <p
-            className="text-lg font-semibold max-w-xs hover:font-bold"
+            className="relative left-1 text-lg font-semibold max-w-xs hover:font-bold"
             style={{
               textDecoration: todo.checked ? "line-through" : "none",
             }}
